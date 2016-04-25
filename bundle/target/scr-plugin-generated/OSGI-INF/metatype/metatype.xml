@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/metatype">
+    <OCD id="com.mycompany.myproject.authenticationhandler.otpAuthenticationHandler" name="My Custom Authentication Handelr" description="Authenticates User Against Citrix One Web Service"/>
+    <OCD id="com.mycompany.myproject.authenticationhandler.QRCode" name="%com.mycompany.myproject.authenticationhandler.QRCode.name" description="%com.mycompany.myproject.authenticationhandler.QRCode.description">
+        <AD id="sling.servlet.paths" type="String" default="/bin/qrcode" name="%sling.servlet.paths.name" description="%sling.servlet.paths.description"/>
+        <AD id="sling.servlet.methods" type="String" default="GET" name="%sling.servlet.methods.name" description="%sling.servlet.methods.description"/>
+    </OCD>
+    <Designate pid="com.mycompany.myproject.authenticationhandler.otpAuthenticationHandler">
+        <Object ocdref="com.mycompany.myproject.authenticationhandler.otpAuthenticationHandler"/>
+    </Designate>
+    <Designate pid="com.mycompany.myproject.authenticationhandler.QRCode">
+        <Object ocdref="com.mycompany.myproject.authenticationhandler.QRCode"/>
+    </Designate>
+</metatype:MetaData>
